@@ -1,0 +1,151 @@
+body{
+      height: 100vh;
+      font-family: 'Inter', sans-serif;
+      background-image: url("images/pattern-bg.svg"),
+                        url("images/pattern-curve.svg"),
+                        url("images/pattern-quotes.svg");
+      background-position: 92%,
+                           bottom left,
+                           12% 25%;
+      background-repeat: no-repeat;
+      background-size: 50%,
+                       50%,
+                       11%;
+      margin: 0;
+      font-size: 32px;
+}
+
+#initial{
+
+}
+
+.slide{
+      /* background-color: red; */
+      height: 85vh;
+      display: flex;      
+      align-items: center;
+      /* justify-content: space-around; */
+      transition: 0.5s;
+}
+
+.slide .content{
+      position: relative;
+      width: 39rem;
+      top: 4rem;
+      left: 6.5rem;
+      z-index: 100;
+}
+
+
+.content .quote{
+      color: rgba(0, 0, 0, 0.85);
+}
+
+.content .detail{
+      margin-top: 2.5rem;
+      font-size: 1.25rem;
+      color: gray;
+}
+
+.detail .name{
+      font-weight: 700;
+      color: black;
+}
+
+.slide img{
+      width: 39%;
+      position: relative;
+      top: 3.5rem;
+      left: 1.25rem;
+      border-radius: 0.4rem;
+      box-shadow: 0.05rem 0.25rem 0.5rem 0.1rem rgba(0, 0, 0, 0.1);
+}
+
+#butts{
+      position: absolute;
+      display: flex;
+      left: 55%;
+}
+
+#butts .button{
+      width: 50px;
+      height: 50px;
+      border: none;
+      transition: 0.3s;
+      background-color: white;
+      box-shadow: 0.5rem 0.75rem 1rem 0 rgba(0, 0, 0, 0.1);
+      outline: 0;
+}
+
+#butts .button:hover{
+      background-color: whitesmoke;
+      cursor: pointer;
+}
+
+#butts .b1{
+      border-radius: 2rem 0 0 2rem;
+      border-right: white;
+}
+
+#butts .b2{
+      border-radius: 0 2rem 2rem 0;
+}
+
+.displaynone{
+      display: none;
+}
+
+
+@media screen and (max-width: 834px){
+      body{
+            background-position: 50% 5%,
+                                bottom left,
+                                50% 58.25%;
+            background-repeat: no-repeat;
+            background-size: 70%,
+                             50%,
+                             11%;
+      }
+
+      .slide{
+            flex-direction: column-reverse;
+      }
+
+      .slide img{
+            width: 55%;
+            top: -3%;
+            left: 0.1rem;
+      }
+
+      .slide .content{
+            left: 0;
+            /* top: 5.5%; */
+            top: 1.8rem;
+            width: 80%;
+            font-size: 1.5rem;
+            text-align: center;
+      }
+
+      .slide .content .detail{
+            margin-top: 1rem;
+      }
+
+      #final .content{
+            width: 82%;
+      }
+
+      #butts{
+            top: 45%;
+            left: 40%;
+      }
+}
+
+.attribution { 
+      font-size: 11px;
+      text-align: center; 
+      margin-top: 4.5rem;
+}
+    
+.attribution a {
+      color: hsl(228, 45%, 44%); 
+}
